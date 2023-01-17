@@ -34,7 +34,9 @@ class _LoginPageState extends State<LoginPage> {
                     fontWeight: FontWeight.bold,
                     letterSpacing: 2),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Text(
                 "Sign in to continue",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
@@ -56,7 +58,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 height: 40,
                 width: double.infinity,
@@ -77,7 +81,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               Text(
                 "SIGN UP FOR AN ACCOUNT",
                 style: TextStyle(color: Colors.grey, fontSize: 18),
