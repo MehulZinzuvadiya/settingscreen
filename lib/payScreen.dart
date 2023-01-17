@@ -10,7 +10,6 @@ class PayBill extends StatefulWidget {
 class _PayBillState extends State<PayBill> {
   Color c1 = Colors.grey.shade300;
   Color c2 = Colors.indigo.shade900;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -296,8 +295,6 @@ class _PayBillState extends State<PayBill> {
               ),
             ],
           ),
-
-
         ],
       ),
     ));
