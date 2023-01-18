@@ -11,7 +11,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      '/': (context) => login2(),
+      '/': (context) => Product(),
     },
   ));
 }
