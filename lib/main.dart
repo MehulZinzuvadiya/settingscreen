@@ -4,13 +4,19 @@ import 'package:settingscreen/payScreen.dart';
 import 'homePage.dart';
 import 'loginpage.dart';
 import 'product.dart';
+import 'screen1.dart';
+import 'screen10.dart';
+import 'screen11.dart';
+import 'screen2.dart';
+import 'screen8.dart';
+import 'screen9.dart';
 import 'search.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      '/': (context) => Product(),
+      '/': (context) => Screen11(),
     },
   ));
 }
