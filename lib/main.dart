@@ -4,6 +4,7 @@ import 'package:settingscreen/payScreen.dart';
 import 'homePage.dart';
 import 'login2.dart';
 import 'loginpage.dart';
+import 'mycart.dart';
 import 'product.dart';
 import 'screen1.dart';
 import 'screen10.dart';
@@ -17,7 +18,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     routes: {
-      '/': (context) => Screen11(),
+      '/': (context) => MyCart(),
     },
   ));
 }
