@@ -34,14 +34,66 @@ class _MyCartState extends State<MyCart> {
         elevation: 0,
         leading: Icon(Icons.arrow_back),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: c1
-              .asMap()
-              .entries
-              .map((e) => cart(c1[e.key], sno[e.key], price[e.key]))
-              .toList(),
-        ),
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              child: SingleChildScrollView(
+                child: Column(
+                  children: c1
+                      .asMap()
+                      .entries
+                      .map((e) => cart(c1[e.key], sno[e.key], price[e.key]))
+                      .toList(),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.center,
+            height: 100,
+            width: double.infinity,
+            color: Colors.grey,
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Checkout Price",
+                        style: TextStyle(color: Colors.black),
+                      ),
+                      Text(
+                        "5000",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Container(
+                    height: 50,
+                    width: double.infinity,
+                    alignment: Alignment.center,
+                    color: Colors.red,
+                    child: Text(
+                      "Checkout",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     ));
   }
