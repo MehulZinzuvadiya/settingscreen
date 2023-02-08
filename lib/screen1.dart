@@ -43,16 +43,8 @@ class _Screen1State extends State<Screen1> {
             children: [
               Column(
                 children: [
-                  //
-                  // storage , percentage,
                   Row(
                     children: [
-                      // Container(
-                      //   height: 60,
-                      //   width: 60,
-                      //   child: Image.asset("assets/img/per.png",
-                      //       fit: BoxFit.cover),
-                      // ),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -64,15 +56,16 @@ class _Screen1State extends State<Screen1> {
                             border: Border.all(color: Colors.yellow, width: 2),
                           ),
                           child: Text("93%",
-                              style:
-                                  TextStyle(color: Colors.yellow, fontSize: 11)),
+                              style: TextStyle(
+                                  color: Colors.yellow, fontSize: 11)),
                         ),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Storage",
-                              style: TextStyle(fontSize: 13, color: Colors.grey)),
+                              style:
+                                  TextStyle(fontSize: 13, color: Colors.grey)),
                           SizedBox(
                             height: 5,
                           ),
@@ -80,8 +73,8 @@ class _Screen1State extends State<Screen1> {
                             children: [
                               Text(
                                 "118.47GB",
-                                style:
-                                    TextStyle(color: Colors.yellow, fontSize: 10),
+                                style: TextStyle(
+                                    color: Colors.yellow, fontSize: 10),
                               ),
                               Text(
                                 " / 118.86GB",
@@ -159,10 +152,10 @@ class _Screen1State extends State<Screen1> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              fmLogo("Android"),
-                              fmLogo("Biodata"),
-                              fmLogo("browser"),
-                              fmLogo("com.activision"),
+                              mylogo("Android"),
+                              mylogo("Biodata"),
+                              mylogo("browser"),
+                              mylogo("com.activision"),
                             ],
                           ),
                         ),
@@ -171,10 +164,10 @@ class _Screen1State extends State<Screen1> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              fmLogo("Android"),
-                              fmLogo("Biodata"),
-                              fmLogo("browser"),
-                              fmLogo("com.activision"),
+                              mylogo("Android"),
+                              mylogo("Biodata"),
+                              mylogo("browser"),
+                              mylogo("com.activision"),
                             ],
                           ),
                         ),
@@ -183,10 +176,10 @@ class _Screen1State extends State<Screen1> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              fmLogo("Android"),
-                              fmLogo("Biodata"),
-                              fmLogo("browser"),
-                              fmLogo("com.activision"),
+                              mylogo("Android"),
+                              mylogo("Biodata"),
+                              mylogo("browser"),
+                              mylogo("com.activision"),
                             ],
                           ),
                         ),
@@ -209,14 +202,13 @@ class _Screen1State extends State<Screen1> {
     );
   }
 
-  Widget fmLogo(String folderName) {
+  Widget mylogo(String folderName) {
     return Container(
       alignment: Alignment.center,
       height: 120,
       width: 100,
       child: Column(
         children: [
-          //FlutterLogo(size: 50),
           Image.asset("assets/images/fm.png", height: 50, width: 50),
           SizedBox(
             height: 8,
